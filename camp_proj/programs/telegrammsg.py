@@ -5,10 +5,6 @@ import asyncio
 
 import re
 
-# Load telegram handle from file
-with open("telegramhandle.txt", "r") as file:
-    chat_id = file.read().strip()
-
 # 6779741688:AAGMkI37XgEESo8RjRXlOFxgVhObcB4xpPk - andyGGgamebot
 TOKEN = "6941616636:AAGQv0SL5uiPvTHMEpYJvBYXej9br7IPq_0"
 
