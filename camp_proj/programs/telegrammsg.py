@@ -5,9 +5,6 @@ import asyncio
 
 import re
 
-# 6779741688:AAGMkI37XgEESo8RjRXlOFxgVhObcB4xpPk - andyGGgamebot
-TOKEN = "6941616636:AAGQv0SL5uiPvTHMEpYJvBYXej9br7IPq_0"
-
 emoji_pattern = re.compile(r"\u2764\ufe0f")
 
 dp = Dispatcher()
@@ -115,7 +112,7 @@ async def cmd_start(msg: types.Message) -> None:
         await msg.answer(text="Please enter 6 emojis with spaces inbetween")
 
 async def main() -> None:
-    bot = Bot('6779741688:AAGMkI37XgEESo8RjRXlOFxgVhObcB4xpPk')
+    bot = Bot('6779741688:AAGMkI37XgEESo8RjRXlOFxgVhObcB4xpPk') # this is my bot, change the value of the bot token to your own
     await dp.start_polling(bot)
 
 asyncio.run(main())
