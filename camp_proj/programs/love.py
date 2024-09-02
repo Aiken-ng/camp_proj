@@ -9,7 +9,7 @@ from timeit import default_timer as timer
 reps = 0
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0) # value of 1 for external camera!
 
 toast = Notification(app_id="NeuralNine Script", title="Password (Puzzle 1):", msg="deeploveofGod",duration="long")
 toast.set_audio(audio.LoopingCall,loop=True)
