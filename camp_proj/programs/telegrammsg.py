@@ -112,7 +112,7 @@ async def cmd_start(msg: types.Message) -> None:
         await msg.answer(text="Please enter 6 emojis with spaces inbetween")
 
 async def main() -> None:
-    bot = Bot('6779741688:AAGMkI37XgEESo8RjRXlOFxgVhObcB4xpPk') # this is my bot, change the value of the bot token to your own
+    bot = Bot('') # this is my bot, change the value of the bot token to your own
     await dp.start_polling(bot)
 
 asyncio.run(main())
